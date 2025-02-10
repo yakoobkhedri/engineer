@@ -1039,6 +1039,9 @@ input[type="number"] {
     .rounded-sm-12 {
         border-radius: 12px !important;
     }
+    .rounded-sm-8 {
+        border-radius: 8px !important;
+    }
     .position-md-static{
         position: static !important;
     }
@@ -1049,6 +1052,9 @@ input[type="number"] {
 }
 
 @media only screen and (max-width:576px) {
+    footer {
+        margin-top: 54px;
+    }
     .fs-xs-26 {
         font-size: 26px;
     }

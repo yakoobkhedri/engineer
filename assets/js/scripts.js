@@ -30,12 +30,13 @@ var team = new Swiper(".team", {
   },
 });
 var blog = new Swiper(".blog", {
-  slidesPerView: 1.3,
-  spaceBetween: 30,
+  slidesPerView: 1.5,
+  spaceBetween: 12,
   autoplay: true,
   breakpoints: {
-    768: {
+    992: {
       slidesPerView: 2,
+      spaceBetween: 30,
     },
   },
 });
