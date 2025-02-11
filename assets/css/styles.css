@@ -86,7 +86,7 @@ header ul li>div,
     text-align: center;
 }
 #dropdown > div > div{
-    background-color: #2d0544;
+    background-color: #121222;
 }
 #banner {
     background-image: url('../img/futurism-perspective-digital-nomads-lifestyle\ 1.png');
@@ -378,6 +378,9 @@ a {
 }
 .bg-main3{
     background: linear-gradient(180deg, #5C078A 0%, #121222 100%);
+}
+.bg-main4{
+    background-color: #121222;
 }
 .bg-gray{
     background-color: #F5F5F5;
