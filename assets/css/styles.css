@@ -1105,6 +1105,18 @@ input[type="number"] {
     .w-xs-65 {
         width: 65px;
     }
+    .w-xs-14 {
+        width: 14px;
+    }
+    .h-xs-139{
+        height: 139px;
+    }
+    .h-xs-34{
+        height: 34px;
+    }
+    .h-xs-14{
+        height: 14px;
+    }
     .rounded-xs-12 {
         border-radius: 12px !important;
     }
@@ -1113,6 +1125,9 @@ input[type="number"] {
     }
     .p-xs-10{
         padding: 10px;
+    }
+    .top-xs-8{
+        top: 8px;
     }
 }
 
