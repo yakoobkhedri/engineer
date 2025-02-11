@@ -55,12 +55,17 @@ header ul li {
 header ul li:hover a,
 header ul li.active a,
 header ul li:hover>div,
-header ul li.active>div {
+header ul li.active>div,
+#offcanvasRight ul li a:hover,
+#offcanvasRight ul li a.active {
     color: #cb49b6  !important;
 }
-
+#offcanvasRight ul li a:hover svg path,#offcanvasRight ul li a.active svg path{
+    fill: #cb49b6;
+}
 header ul li svg path,
-header ul li>div {
+header ul li>div,
+#offcanvasRight ul li a svg path {
     transition: all .4s;
 }
 
@@ -543,6 +548,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .border-white2{
     border: 1.13px solid #FFFFFF33
 }
+.border-t-main{
+    border-top: 1px solid #3A2547;
+}
 /* width */
 .w-1 {
     width: 1px;
@@ -661,6 +669,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 }
 .h-37 {
     height: 37px;
+}
+.h-47vh{
+    height: 47vh;
 }
 .h-48 {
     height: 48px;
