@@ -313,6 +313,9 @@ a {
 .bottom-2 {
     bottom: 2px;
 }
+.-bottom-150 {
+    bottom: -150px;
+}
 /* right */
 .-right-226 {
     right: -226px;
@@ -372,6 +375,9 @@ a {
     left: 0;
 }
 /* line height */
+.lh-36{
+    line-height: 36px;
+}
 .lh-73{
     line-height: 73px;
 }
@@ -637,7 +643,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-56 {
     width: 56px;
 }
-
+.w-59 {
+    width: 59%;
+}
 .w-60 {
     width: 60px;
 }
@@ -798,6 +806,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .h-440 {
     height: 440px;
 }
+.h-580 {
+    height: 580px;
+}
 /* transition */
 .transition {
     transition: all .4s;
@@ -872,7 +883,7 @@ input[type="number"] {
     color: #2596a9 !important;
 }
 .hover-main:hover{
-    color: #4B1073 !important;;
+    color: #cb49b6 !important;;
 }
 .hover-1:hover {
     background: linear-gradient(160.51deg, rgba(136, 231, 247, 0) 26.13%, rgba(112, 236, 255, 0.44) 74.62%);
@@ -1049,6 +1060,9 @@ input[type="number"] {
     .fs-sm-24 {
         font-size: 24px;
     }
+    .fs-sm-22 {
+        font-size: 22px;
+    }
     .fs-sm-20 {
         font-size: 20px;
     }
@@ -1203,11 +1217,17 @@ input[type="number"] {
     .-top-xs-29{
         top: -29px;
     }
+    .bottom-xs-0{
+        bottom: 0;
+    }
     .w-xs-273 {
         width: 273px;
     }
     .w-xs-213 {
         width: 213px;
+    }
+    .w-sm-142{
+        width: 142px;
     }
     .w-xs-65 {
         width: 65px;
@@ -1218,11 +1238,32 @@ input[type="number"] {
     .w-xs-14 {
         width: 14px;
     }
+    .w-xs-32{
+        width: 32px;
+    }
+    .rounded-xs-5{
+        border-radius: 5px;
+    }
+    .h-sm-120{
+        height: 120px;
+    }
+    .h-sm-27{
+        height: 27px;
+    }
+    .h-xs-32{
+        height: 32px;
+    }
     .h-xs-273{
         height: 273px;
     }
+    .h-xs-220{
+        height: 220px;
+    }
     .h-xs-213{
         height: 213px;
+    }
+    .h-xs-180{
+        height: 180px;
     }
     .h-xs-139{
         height: 139px;
