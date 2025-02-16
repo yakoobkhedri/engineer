@@ -194,11 +194,20 @@ a {
 .rounded-4 {
     border-radius: 4px !important;
 }
+.rounded-5 {
+    border-radius: 5px !important;
+}
 .rounded-7 {
     border-radius: 7px !important;
 }
 .rounded-8 {
     border-radius: 8px !important;
+}
+.rounded-9 {
+    border-radius: 9px !important;
+}
+.rounded-br-9{
+    border-bottom-right-radius: 44px;
 }
 .rounded-10 {
     border-radius: 10px !important;
@@ -209,6 +218,9 @@ a {
 }
 .rounded-15 {
     border-radius: 15px !important;
+}
+.rounded-tr-15{
+    border-top-right-radius: 81px;
 }
 .rounded-16 {
     border-radius: 16px !important;
@@ -237,6 +249,9 @@ a {
 }
 .rounded-tr-150{
     border-top-right-radius: 150px;
+}
+.rounded-tl-459{
+    border-top-left-radius: 459px;
 }
 /* after */
 .after::after{
@@ -293,6 +308,9 @@ a {
 }
 .text-gray{
     color: #C3C3C3;
+}
+.text-gray2{
+    color: #D4D4D4;
 }
 /* box shadow */
 .shadow1 {
@@ -433,6 +451,9 @@ a {
 }
 .bg-main7{
     background-color: #8550A7;
+}
+.bg-main8{
+    background-color: #CE6CFF8A;
 }
 .bg-gray{
     background-color: #F5F5F5;
@@ -613,6 +634,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .border-gray{
     border: 1px solid #999999b8;
 }
+.border-gray2{
+    border: 1.13px solid #E7E7E8;
+}
 .border-white2{
     border: 1.13px solid #FFFFFF33
 }
@@ -643,6 +667,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-34 {
     width: 34px;
 }
+.w-36 {
+    width: 36px;
+}
 .w-37 {
     width: 37px;
 }
@@ -652,7 +679,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-43 {
     width: 43%;
 }
-
+.w-45 {
+    width: 45px;
+}
 .w-48 {
     width: 48px;
 }
@@ -715,7 +744,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-230 {
     width: 230px;
 }
-
+.w-248{
+    width: 248px;
+}
 .w-290 {
     width: 290px;
 }
@@ -749,11 +780,17 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .h-34 {
     height: 34px;
 }
+.h-36 {
+    height: 36px;
+}
 .h-37 {
     height: 37px;
 }
 .h-40 {
     height: 40px;
+}
+.h-45 {
+    height: 45px;
 }
 .h-47vh{
     height: 47vh;
@@ -761,10 +798,15 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .h-48 {
     height: 48px;
 }
+.h-54 {
+    height: 54px;
+}
 .h-56 {
     height: 56px;
 }
-
+.h-57 {
+    height: 57px;
+}
 .h-60 {
     height: 60px;
 }
