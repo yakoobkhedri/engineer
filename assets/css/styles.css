@@ -319,6 +319,9 @@ a {
 .shadow2{
     box-shadow: 0px 12.03px 30.61px 0px #8B8B8B1F;
 }
+.shadow3{
+    box-shadow: 0.97px 0.97px 14.7px 0px #AA2BFF99;
+}
 /* top */
 .-top-12 {
     top: -12px;
@@ -545,6 +548,9 @@ a {
 .-mr-116{
     margin-right: -116px;
 }
+.mt-29{
+    margin-top: 29px;
+}
 .mt-429{
     margin-top: 429px;
 }
@@ -701,12 +707,17 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-79 {
     width: 79%;
 }
-
+.w-83 {
+    width: 83%;
+}
 .w-84 {
     width: 84px;
 }
 .w-87 {
     width: 87px;
+}
+.w-92 {
+    width: 92%;
 }
 .w-104 {
     width: 104px;
