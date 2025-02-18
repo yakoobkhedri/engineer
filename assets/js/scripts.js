@@ -55,7 +55,15 @@ var mySwiper2 = new Swiper(".mySwiper2", {
     swiper: mySwiper,
   },
 });
-
+var comments = new Swiper(".comments", {
+  slidesPerView: 1,
+  spaceBetween: 60,
+  autoplay: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // accordion
 
 let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
