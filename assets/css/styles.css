@@ -477,6 +477,9 @@ a {
 .bg-main8{
     background-color: #CE6CFF8A;
 }
+.bg-main9{
+    background-color: #141225;
+}
 .bg-gray{
     background-color: #F5F5F5;
 }
@@ -904,6 +907,9 @@ a {
 .h-290 {
     height: 290px;
 }
+.h-304 {
+    height: 304px;
+}
 .h-345 {
     height: 345px;
 }
@@ -1144,7 +1150,12 @@ input[type="number"] {
     .fs-md-13 {
         font-size: 13px;
     }
-
+    .mt-lg-00{
+        margin-top: 0;
+    }
+    .w-lg-100{
+        width: 100%;
+    }
     .w-md-90 {
         width: 90px;
     }
@@ -1231,11 +1242,14 @@ input[type="number"] {
     .w-sm-84 {
         width: 84px;
     }
+    .w-sm-67 {
+        width: 67px;
+    }
     .w-sm-56 {
         width: 56px;
     }
     .w-sm-33 {
-        width: 33px;
+        width: 33px !important;
     }
     .w-sm-24 {
         width: 24px;
@@ -1262,11 +1276,17 @@ input[type="number"] {
     .h-sm-51 {
         height: 51px;
     }
+    .h-sm-33 {
+        height: 33px;
+    }
     .h-sm-30 {
         height: 30px;
     }
     .h-sm-24 {
         height: 24px;
+    }
+    .right-sm-52{
+        right: 52px !important;
     }
     .lh-sm-36{
         line-height: 36px;
@@ -1322,11 +1342,18 @@ input[type="number"] {
     .fs-xs-9 {
         font-size: 9px;
     }
-
+    .fs-xs-8 {
+        font-size: 8px;
+    }
+    .-top-xs-46{
+        top: -46px;
+    }
     .w-xs-25 {
         width: 25px;
     }
-
+    .w-xs-47 {
+        width: 47px;
+    }
     .w-xs-50 {
         width: 50px;
     }
