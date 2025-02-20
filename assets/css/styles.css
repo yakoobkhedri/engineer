@@ -1092,6 +1092,18 @@ input[type="number"] {
 .pageHover:hover{
     background-color: #cb49b6 ;
 }
+/* select color */
+.color,.size{
+    transition: all .4s;
+}
+.color.active{
+  border: 3px solid white;
+  opacity: .5;
+}
+.size.active{
+    background-color: white !important;
+    color: #121222 !important;
+}
 /* swiper */
 
 .tabsSwiper .swiper-button-next::after,.tabsSwiper2 .swiper-button-next::after {
@@ -1236,6 +1248,9 @@ input[type="number"] {
     .w-sm-100 {
         width: 100%;
     }
+    .w-md-100 {
+        width: 100%;
+    }
     .w-sm-86 {
         width: 86px;
     }
@@ -1253,6 +1268,9 @@ input[type="number"] {
     }
     .w-sm-24 {
         width: 24px;
+    }
+    .h-md-40{
+        height: 40px;
     }
     .h-sm-204{
         height: 204px;

@@ -15,7 +15,23 @@ document.addEventListener('mousemove', (event) => {
   }
 })
 
+// select color
 
+let colors = Array.from(document.getElementsByClassName('color'));
+let sizes = Array.from(document.getElementsByClassName('size'));
+
+colors.forEach((item)=>{
+  item.addEventListener('click', function () {
+    colors.forEach((items)=>{items.classList.remove('active')});
+    item.classList.add('active');
+  })
+})
+sizes.forEach((item)=>{
+  item.addEventListener('click', function () {
+    sizes.forEach((items)=>{items.classList.remove('active')});
+    item.classList.add('active');
+  })
+})
 // swiper
 
 var team = new Swiper(".team", {
@@ -73,29 +89,4 @@ accordionBtn.forEach(item => {
     item.classList.toggle('active');
     item.nextElementSibling.classList.toggle('active');
   })
-});
-
-// aos
-
-AOS.init();
-
-// navigation
-
-const list = document.querySelectorAll('.list');
-
-function activeLink() {
-  list.forEach((item) =>
-    item.classList.remove('active'));
-  this.classList.add('active');
-}
-
-list.forEach((item) =>
-  item.addEventListener('mouseover', activeLink));
-
-
-// counter
-
-$('.counter').counterUp({
-  delay: 10,
-  time: 1400
 });
