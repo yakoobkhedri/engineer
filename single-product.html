@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
   <title>جزئیات محصول</title>
 </head>
@@ -269,116 +268,196 @@
     </section>
 
     <!-- product details -->
-     <section class="position-relative z-1 mt-5">
-       <div class="container">
-         <div class="row mx-0 g-4">
-           <div class="col-lg-5">
-             
-           </div>
-           <div class="col-lg-7">
-             <div class="d-flex align-items-center justify-content-between gap-2">
-               <h2 class="fs-30 fs-sm-18 font-bold text-white">لباس لورم ایپسوم</h2>
-               <div class="w-45 h-45 d-flex align-items-center justify-content-center rounded-10 cursor border border-white">
+    <section class="position-relative z-1 mt-5">
+      <div class="container">
+        <div class="row mx-0 g-4">
+          <div class="col-lg-5">
+            <div class="product-gallery product-gallery-vertical">
+              <div class="row">
+                  <div class="product-main-image">
+                      <img id="product-zoom" src="assets/img/products/single/1.jpg"
+                          data-zoom-image="assets/img/products/single/1-big.jpg"
+                          alt="تصویر محصول">
+
+                      <a href="#" id="btn-product-gallery" class="btn-product-gallery">
+                          <i class="icon-arrows"></i>
+                      </a>
+                  </div><!-- End .product-main-image -->
+
+                  <div id="product-zoom-gallery">
+                      <a class="product-gallery-item active" href="#"
+                          data-image="assets/img/products/single/1.jpg"
+                          data-zoom-image="assets/img/products/single/1-big.jpg">
+                          <img src="assets/img/products/single/1-small.jpg"
+                              alt="توضیحات تصویر">
+                      </a>
+
+                      <a class="product-gallery-item" href="#"
+                          data-image="assets/img/products/single/2.jpg"
+                          data-zoom-image="assets/img/products/single/2-big.jpg">
+                          <img src="assets/img/products/single/2-small.jpg"
+                              alt="توضیحات تصویر">
+                      </a>
+
+                      <a class="product-gallery-item" href="#"
+                          data-image="assets/img/products/single/3.jpg"
+                          data-zoom-image="assets/img/products/single/3-big.jpg">
+                          <img src="assets/img/products/single/3-small.jpg"
+                              alt="توضیحات تصویر">
+                      </a>
+
+                      <a class="product-gallery-item" href="#"
+                          data-image="assets/img/products/single/4.jpg"
+                          data-zoom-image="assets/img/products/single/4-big.jpg">
+                          <img src="assets/img/products/single/4-small.jpg" alt="product back">
+                      </a>
+                  </div><!-- End .product-image-gallery -->
+              </div><!-- End .row -->
+          </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center justify-content-between gap-2">
+              <h2 class="fs-30 fs-sm-18 font-bold text-white">لباس لورم ایپسوم</h2>
+              <div
+                class="w-45 h-45 d-flex align-items-center justify-content-center rounded-10 cursor border border-white">
                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.5683 16.8273C9.3351 16.8273 9.10942 16.7972 8.92136 16.7295C6.0477 15.7441 1.48145 12.246 1.48145 7.07796C1.48145 4.44503 3.61036 2.30859 6.22824 2.30859C7.49957 2.30859 8.68815 2.80509 9.5683 3.69276C10.4485 2.80509 11.637 2.30859 12.9084 2.30859C15.5262 2.30859 17.6552 4.45255 17.6552 7.07796C17.6552 12.2535 13.0889 15.7441 10.2153 16.7295C10.0272 16.7972 9.80151 16.8273 9.5683 16.8273ZM6.22824 3.43699C4.23474 3.43699 2.60984 5.06941 2.60984 7.07796C2.60984 12.2159 7.55223 15.0745 9.28997 15.6688C9.42537 15.714 9.71876 15.714 9.85416 15.6688C11.5844 15.0745 16.5343 12.2235 16.5343 7.07796C16.5343 5.06941 14.9094 3.43699 12.9159 3.43699C11.7724 3.43699 10.7117 3.9711 10.0272 4.89639C9.81655 5.18225 9.3351 5.18225 9.12447 4.89639C8.42486 3.96358 7.37169 3.43699 6.22824 3.43699Z" fill="white"/>
-                  </svg>
-               </div>
-             </div>
-             <p class="text-gray2 mt-3 text-justify fs-sm-12">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-             </p>
-             <div class="mt-3 mb-5 pb-5">
-               <div class="d-flex align-items-center gap-2 mb-2">
-                 <img alt="icon" src="assets/img/svg/WashingMachine.svg" class="flex-shrink-0">
-                 <p class="mb-0 fs-14 fs-sm-12 text-gray2">قابلیت شستشو: با ماشین لباسشویی یا دست</p>
-               </div>
-               <div class="d-flex align-items-center gap-2 mb-2">
-                 <img alt="icon" src="assets/img/svg/SealCheck.svg" class="flex-shrink-0">
-                 <p class="mb-0 fs-14 fs-sm-12 text-gray2">جنس پارچه: با کیفیت بالا و ضد چروک</p>
-               </div>
-               <div class="d-flex align-items-center gap-2">
-                 <img alt="icon" src="assets/img/svg/DropSlash.svg" class="flex-shrink-0">
-                 <p class="mb-0 fs-14 fs-sm-12 text-gray2">مقاومت در برابر آب</p>
-               </div>
-             </div>
-             <form class="pb-2">
-                <div>
-                  <h6 class="text-gray2">رنگبندی</h6>
-                  <div class="d-flex align-items-center gap-2">
-                    <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #005436">
-                      <input type="radio" name="color" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #FC5050">
-                      <input type="radio" name="color" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #BDEE60">
-                      <input type="radio" name="color" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #FFEA63">
-                      <input type="radio" name="color" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-4 pt-2">
-                  <h6 class="text-gray2">سایزبندی</h6>
-                  <div class="d-flex align-items-center gap-2 fs-12 text-gray2">
-                    <div class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
-                      XS
-                      <input type="radio" name="size" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
-                      S
-                      <input type="radio" name="size" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
-                      M
-                      <input type="radio" name="size" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
-                      L
-                      <input type="radio" name="size" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
-                      XL
-                      <input type="radio" name="size" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                    <div class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
-                      2XL
-                      <input type="radio" name="size" class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
-                    </div>
-                  </div>
-                </div>
-             </form>
-             <a class="mt-4 btnHover h-54 h-md-40 px-3 d-flex align-items-center justify-content-center gap-2 bg-main6 text-white rounded-9 fs-18 fs-sm-16">
-              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.03804 5.85101L6.45426 3.43706C6.6247 3.26587 6.82729 3.13004 7.05038 3.03737C7.27347 2.94471 7.51268 2.89704 7.75425 2.89709C8.24657 2.89709 8.70939 3.08994 9.05651 3.43706L11.6565 6.03704C11.8277 6.20748 11.9635 6.41007 12.0562 6.63317C12.1488 6.85626 12.1965 7.09546 12.1965 7.33704C12.1965 7.82935 12.0036 8.29218 11.6565 8.6393L9.75529 10.5405C10.2003 11.5214 10.8191 12.4138 11.5816 13.1745C12.3423 13.939 13.2346 14.5599 14.2156 15.0077L16.1169 13.1065C16.2873 12.9353 16.4899 12.7994 16.713 12.7068C16.9361 12.6141 17.1753 12.5664 17.4168 12.5665C17.9092 12.5665 18.372 12.7593 18.7191 13.1065L21.3214 15.7042C21.4928 15.8749 21.6287 16.0779 21.7214 16.3014C21.814 16.5249 21.8616 16.7645 21.8613 17.0064C21.8613 17.4988 21.6685 17.9616 21.3214 18.3087L18.9097 20.7204C18.3561 21.2762 17.5915 21.5916 16.8066 21.5916C16.6409 21.5916 16.4821 21.578 16.3256 21.5507C13.2673 21.0471 10.234 19.4204 7.78601 16.9747C5.3403 14.5312 3.71588 11.5002 3.20541 8.43284C3.05113 7.49585 3.36195 6.53163 4.03804 5.85101Z" fill="white"/>
+                  <path
+                    d="M9.5683 16.8273C9.3351 16.8273 9.10942 16.7972 8.92136 16.7295C6.0477 15.7441 1.48145 12.246 1.48145 7.07796C1.48145 4.44503 3.61036 2.30859 6.22824 2.30859C7.49957 2.30859 8.68815 2.80509 9.5683 3.69276C10.4485 2.80509 11.637 2.30859 12.9084 2.30859C15.5262 2.30859 17.6552 4.45255 17.6552 7.07796C17.6552 12.2535 13.0889 15.7441 10.2153 16.7295C10.0272 16.7972 9.80151 16.8273 9.5683 16.8273ZM6.22824 3.43699C4.23474 3.43699 2.60984 5.06941 2.60984 7.07796C2.60984 12.2159 7.55223 15.0745 9.28997 15.6688C9.42537 15.714 9.71876 15.714 9.85416 15.6688C11.5844 15.0745 16.5343 12.2235 16.5343 7.07796C16.5343 5.06941 14.9094 3.43699 12.9159 3.43699C11.7724 3.43699 10.7117 3.9711 10.0272 4.89639C9.81655 5.18225 9.3351 5.18225 9.12447 4.89639C8.42486 3.96358 7.37169 3.43699 6.22824 3.43699Z"
+                    fill="white" />
                 </svg>
-               <p class="mb-0">تماس با ما</p>
-             </a>
-           </div>
-         </div>
-         <div class="mt-md-5 mt-4 pt-5">
-           <div class="d-flex align-items-end gap-1">
-             <div class="fs-18 fs-sm-12 px-4 px-md-0 flex-shrink-0 font-bold text-white bg-main8 rounded-tl-459 rounded-tr-15 rounded-br-9 w-md-100 w-248 h-md-40 h-57 d-flex align-items-center justify-content-between justify-content-md-center">
-              <p class="mb-0">توضیحات محصول</p>
-              <svg class="d-md-none" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.29289 0.984688C7.68342 0.594163 8.31658 0.594163 8.70711 0.984688L15.0711 7.34865C15.4616 7.73917 15.4616 8.37234 15.0711 8.76286C14.6805 9.15339 14.0474 9.15339 13.6569 8.76286L8 3.10601L2.34315 8.76286C1.95262 9.15339 1.31946 9.15339 0.928932 8.76286C0.538408 8.37234 0.538408 7.73917 0.928932 7.34865L7.29289 0.984688ZM7 1.69189V1.69179H9V1.69189H7Z" fill="white"/>
+              </div>
+            </div>
+            <p class="text-gray2 mt-3 text-justify fs-sm-12">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون
+              بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+            </p>
+            <div class="mt-3 mb-5 pb-5">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img alt="icon" src="assets/img/svg/WashingMachine.svg" class="flex-shrink-0">
+                <p class="mb-0 fs-14 fs-sm-12 text-gray2">قابلیت شستشو: با ماشین لباسشویی یا دست</p>
+              </div>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <img alt="icon" src="assets/img/svg/SealCheck.svg" class="flex-shrink-0">
+                <p class="mb-0 fs-14 fs-sm-12 text-gray2">جنس پارچه: با کیفیت بالا و ضد چروک</p>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <img alt="icon" src="assets/img/svg/DropSlash.svg" class="flex-shrink-0">
+                <p class="mb-0 fs-14 fs-sm-12 text-gray2">مقاومت در برابر آب</p>
+              </div>
+            </div>
+            <form class="pb-2">
+              <div>
+                <h6 class="text-gray2">رنگبندی</h6>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #005436">
+                    <input type="radio" name="color"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #FC5050">
+                    <input type="radio" name="color"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #BDEE60">
+                    <input type="radio" name="color"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div class="w-36 h-36 color position-relative rounded-5" style="background-color: #FFEA63">
+                    <input type="radio" name="color"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 pt-2">
+                <h6 class="text-gray2">سایزبندی</h6>
+                <div class="d-flex align-items-center gap-2 fs-12 text-gray2">
+                  <div
+                    class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
+                    XS
+                    <input type="radio" name="size"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div
+                    class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
+                    S
+                    <input type="radio" name="size"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div
+                    class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
+                    M
+                    <input type="radio" name="size"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div
+                    class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
+                    L
+                    <input type="radio" name="size"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div
+                    class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
+                    XL
+                    <input type="radio" name="size"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                  <div
+                    class="w-36 h-36 size position-relative border-gray2 rounded-5 d-flex align-items-center justify-content-center">
+                    2XL
+                    <input type="radio" name="size"
+                      class="opacity-none w-100 h-100 cursor position-absolute top-0 end-0 bottom-0 start-0">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <a
+              class="mt-4 btnHover h-54 h-md-40 px-3 d-flex align-items-center justify-content-center gap-2 bg-main6 text-white rounded-9 fs-18 fs-sm-16">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.03804 5.85101L6.45426 3.43706C6.6247 3.26587 6.82729 3.13004 7.05038 3.03737C7.27347 2.94471 7.51268 2.89704 7.75425 2.89709C8.24657 2.89709 8.70939 3.08994 9.05651 3.43706L11.6565 6.03704C11.8277 6.20748 11.9635 6.41007 12.0562 6.63317C12.1488 6.85626 12.1965 7.09546 12.1965 7.33704C12.1965 7.82935 12.0036 8.29218 11.6565 8.6393L9.75529 10.5405C10.2003 11.5214 10.8191 12.4138 11.5816 13.1745C12.3423 13.939 13.2346 14.5599 14.2156 15.0077L16.1169 13.1065C16.2873 12.9353 16.4899 12.7994 16.713 12.7068C16.9361 12.6141 17.1753 12.5664 17.4168 12.5665C17.9092 12.5665 18.372 12.7593 18.7191 13.1065L21.3214 15.7042C21.4928 15.8749 21.6287 16.0779 21.7214 16.3014C21.814 16.5249 21.8616 16.7645 21.8613 17.0064C21.8613 17.4988 21.6685 17.9616 21.3214 18.3087L18.9097 20.7204C18.3561 21.2762 17.5915 21.5916 16.8066 21.5916C16.6409 21.5916 16.4821 21.578 16.3256 21.5507C13.2673 21.0471 10.234 19.4204 7.78601 16.9747C5.3403 14.5312 3.71588 11.5002 3.20541 8.43284C3.05113 7.49585 3.36195 6.53163 4.03804 5.85101Z"
+                  fill="white" />
               </svg>
-             </div>
-             <img alt="line" src="assets/img/Line 35.png" class="w-100 d-block flex-grow-1 d-none d-md-block">
-             <img alt="line" src="assets/img/Asset 1mdpi 2.png" class="flex-shrink-0 d-none d-md-block">
-           </div>
-           <div class="fs-14 fs-sm-12 text-white mt-md-5 mt-4 text-justify">
-             <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-             </p>
-             <p class="mb-0">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-             </p>
-           </div>
-         </div>
-       </div>
-     </section>
+              <p class="mb-0">تماس با ما</p>
+            </a>
+          </div>
+        </div>
+        <div class="mt-md-5 mt-4 pt-5">
+          <div class="d-flex align-items-end gap-1">
+            <div
+              class="fs-18 fs-sm-12 px-4 px-md-0 flex-shrink-0 font-bold text-white bg-main8 rounded-tl-459 rounded-tr-15 rounded-br-9 w-md-100 w-248 h-md-40 h-57 d-flex align-items-center justify-content-between justify-content-md-center">
+              <p class="mb-0">توضیحات محصول</p>
+              <svg class="d-md-none" width="16" height="10" viewBox="0 0 16 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.29289 0.984688C7.68342 0.594163 8.31658 0.594163 8.70711 0.984688L15.0711 7.34865C15.4616 7.73917 15.4616 8.37234 15.0711 8.76286C14.6805 9.15339 14.0474 9.15339 13.6569 8.76286L8 3.10601L2.34315 8.76286C1.95262 9.15339 1.31946 9.15339 0.928932 8.76286C0.538408 8.37234 0.538408 7.73917 0.928932 7.34865L7.29289 0.984688ZM7 1.69189V1.69179H9V1.69189H7Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <img alt="line" src="assets/img/Line 35.png" class="w-100 d-block flex-grow-1 d-none d-md-block">
+            <img alt="line" src="assets/img/Asset 1mdpi 2.png" class="flex-shrink-0 d-none d-md-block">
+          </div>
+          <div class="fs-14 fs-sm-12 text-white mt-md-5 mt-4 text-justify">
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+              جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+            <p class="mb-0">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و
+              جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
   </main>
@@ -608,12 +687,35 @@
     </a>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.elevateZoom.min.js"></script>
+  <script>
+    if ($.fn.elevateZoom) {
+   $('#product-zoom').elevateZoom({
+       gallery: 'product-zoom-gallery',
+       galleryActiveClass: 'active',
+       zoomType: "inner",
+       cursor: "crosshair",
+       zoomWindowFadeIn: 400,
+       zoomWindowFadeOut: 400,
+       responsive: true
+   });
+
+   // On click change thumbs active item
+   $('.product-gallery-item').on('click', function (e) {
+       $('#product-zoom-gallery').find('a').removeClass('active');
+       $(this).addClass('active');
+
+       e.preventDefault();
+   });
+
+}
+</script>
 </body>
 
 </html>
