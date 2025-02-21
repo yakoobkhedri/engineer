@@ -858,7 +858,7 @@ a {
     height: 45px;
 }
 .h-47vh{
-    height: 47vh;
+    height: 46vh;
 }
 .h-48 {
     height: 48px;
@@ -1267,6 +1267,9 @@ input[type="number"] {
     }
     .fs-sm-6 {
         font-size: 6px;
+    }
+    .w-sm-159{
+        width: 159px;
     }
     .w-sm-100 {
         width: 100%;
