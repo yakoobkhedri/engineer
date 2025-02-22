@@ -497,6 +497,12 @@ a {
 .bg-white2{
     background: #FFFFFF0D;
 }
+.bg-white-3{
+    background-color: #FFFFFF08;
+}
+.bg-white-6{
+    background-color:#FFFFFF0F;
+}
 .bg-blur{
     backdrop-filter: blur(22.656137466430664px);
     background: #FFFFFF26;
@@ -507,6 +513,12 @@ a {
 }
 .bg-blur3{
     backdrop-filter: blur(15.800000190734863px)
+}
+.bg-blur4{
+    backdrop-filter: blur(4px)
+}
+.bg-blur5{
+    backdrop-filter: blur(30px)
 }
 /* font size */
 .fs-10 {
@@ -572,6 +584,10 @@ a {
 }
 
 /* padding */
+.py-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
 .px-25 {
     padding-right: 25px;
     padding-left: 25px;
@@ -688,6 +704,9 @@ a {
 }
 .border-gray3{
     border: 3.09px solid #C1C1C1
+}
+.border-b-gray{
+    border-bottom: 1px solid #E7E7E8;
 }
 .border-white2{
     border: 1.13px solid #FFFFFF33
@@ -991,9 +1010,13 @@ a {
 input[type="number"] {
     -moz-appearance: textfield;
 }
-
+/* checkbox */
+.form-check-input:checked {
+    background-color: #FF6CC8;
+    border-color: #FF6CC8;
+  }
 /* accordion */
-.accordionBtn img,.accordionBtn{
+.accordionBtn img,.accordionBtn,.accordionBtn2, .accordionBtn2 svg, .accordionBtn2 p{
   transition: all .4s;
 }
 .accordionBtn.active{
@@ -1003,16 +1026,22 @@ input[type="number"] {
   background-color: #FFFFFF21;
   background-size: cover;
 }
-.accordionBtn.active img{
+.accordionBtn.active img,.accordionBtn2.active svg{
     transform: rotate(180deg);
   }
-.accordionContent {
+  .accordionBtn2.active p{
+   color: #FF6CC8;
+  }
+  .accordionBtn2.active svg path{
+     fill: #FF6CC8;
+  }
+.accordionContent,.accordionContent2 {
     max-height: 0;
     overflow: hidden;
     transition: all .4s;
 }
 
-.accordionContent.active {
+.accordionContent.active,.accordionContent2.active {
     max-height: 2000px;
 }
 
