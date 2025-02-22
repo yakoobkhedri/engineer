@@ -1010,6 +1010,7 @@ a {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
 /* checkbox */
 .form-check-input:checked {
     background-color: #FF6CC8;
@@ -1143,6 +1144,10 @@ input[type="number"] {
 }
 .pageHover:hover{
     background-color: #cb49b6 ;
+}
+/* select */
+select:focus-visible {
+    outline: none;
 }
 /* select color */
 .color,.size{
