@@ -13,8 +13,8 @@
 
   <!-- shape -->
   <img alt="shape" src="assets/img/Group 1261152927.png"
-    class="position-absolute top-0 w-100 start-0 end-0 d-none d-md-block">
-  <img alt="shape" src="assets/img/Group 47198.png" class="position-absolute top-0 w-100 start-0 end-0 d-md-none">
+    class="position-absolute top-0 w-100 start-0 end-0 d-none d-md-block -z-2">
+  <img alt="shape" src="assets/img/Group 47198.png" class="position-absolute -z-2 top-0 w-100 start-0 end-0 d-md-none">
 
   <!-- mobile menu -->
   <div class="offcanvas offcanvas-top bg-main4 w-100 d-xl-none h-47vh" tabindex="-1" id="offcanvasRight"
@@ -268,17 +268,46 @@
     </section>
 
     <!-- category -->
-    <section class="position-relative z-1 mt-5">
+    <section class="mt-5">
       <div class="container">
-        <h2 class="text-white font-bold fs-28">
-          لباس لورم ایپسوم
-          <span class="text-main fs-18">(56 کالا)</span>
-        </h2>
-        <div class="row mx-0 g-4 mt-5">
-          <div class="col-lg-3">
+        <div class="d-flex align-items-center gap-2">
+          <a class="d-lg-none">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4301 18.82C14.2401 18.82 14.0501 18.75 13.9001 18.6C13.6101 18.31 13.6101 17.83 13.9001 17.54L19.4401 12L13.9001 6.46C13.6101 6.17 13.6101 5.69 13.9001 5.4C14.1901 5.11 14.6701 5.11 14.9601 5.4L21.0301 11.47C21.3201 11.76 21.3201 12.24 21.0301 12.53L14.9601 18.6C14.8101 18.75 14.6201 18.82 14.4301 18.82Z" fill="white"/>
+              <path d="M20.33 12.75H3.5C3.09 12.75 2.75 12.41 2.75 12C2.75 11.59 3.09 11.25 3.5 11.25H20.33C20.74 11.25 21.08 11.59 21.08 12C21.08 12.41 20.74 12.75 20.33 12.75Z" fill="white"/>
+            </svg>
+          </a>
+          <h2 class="text-white font-bold fs-28 fs-md-16 mb-0">
+            لباس لورم ایپسوم
+            <span class="text-main fs-18 d-none d-lg-inline-block">(56 کالا)</span>
+          </h2>
+        </div>
+        <div class="d-flex d-lg-none align-items-center justify-content-between gap-2 mt-2">
+          <div class="d-flex align-items-center gap-1 fs-14">
+            <p class="mb-0 text-white">تعداد محصولات:</p>
+            <p class="mb-0 text-main">۵۶ کالا</p>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <div class="w-40 h-40 d-flex align-items-center justify-content-center border border-white rounded-8 cursor filterBtn transition">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.29327 15.1C6.97327 15.1 6.65993 15.02 6.3666 14.86C5.77993 14.5334 5.4266 13.94 5.4266 13.2734V9.74002C5.4266 9.40669 5.2066 8.90669 4.99993 8.65336L2.5066 6.01336C2.0866 5.59336 1.7666 4.87336 1.7666 4.33336V2.80002C1.7666 1.73336 2.57327 0.900024 3.59993 0.900024H12.3999C13.4133 0.900024 14.2333 1.72002 14.2333 2.73336V4.20002C14.2333 4.90002 13.8133 5.69336 13.4199 6.08669L10.5333 8.64002C10.2533 8.87336 10.0333 9.38669 10.0333 9.80002V12.6667C10.0333 13.26 9.65993 13.9467 9.19327 14.2267L8.27327 14.82C7.97327 15.0067 7.63327 15.1 7.29327 15.1ZM3.59993 1.90002C3.13327 1.90002 2.7666 2.29336 2.7666 2.80002V4.33336C2.7666 4.58002 2.9666 5.06002 3.21993 5.31336L5.75994 7.98669C6.09994 8.40669 6.43327 9.10669 6.43327 9.73336V13.2667C6.43327 13.7 6.73327 13.9134 6.85993 13.98C7.13994 14.1334 7.47993 14.1334 7.73993 13.9734L8.6666 13.38C8.85327 13.2667 9.03994 12.9067 9.03994 12.6667V9.80002C9.03994 9.08669 9.3866 8.30002 9.8866 7.88002L12.7399 5.35336C12.9666 5.12669 13.2399 4.58669 13.2399 4.19336V2.73336C13.2399 2.27336 12.8666 1.90002 12.4066 1.90002H3.59993Z" fill="white"/>
+                <path d="M3.99995 7.16664C3.90661 7.16664 3.81995 7.13997 3.73328 7.09331C3.49995 6.94664 3.42661 6.63331 3.57328 6.39997L6.85995 1.13331C7.00661 0.899972 7.31328 0.826639 7.54661 0.973306C7.77995 1.11997 7.85328 1.42664 7.70661 1.65997L4.41995 6.92664C4.32661 7.07997 4.16661 7.16664 3.99995 7.16664Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="w-40 h-40 d-flex align-items-center justify-content-center border border-white rounded-8 cursor filterBtn transition">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 5.16663H2C1.72667 5.16663 1.5 4.93996 1.5 4.66663C1.5 4.39329 1.72667 4.16663 2 4.16663H14C14.2733 4.16663 14.5 4.39329 14.5 4.66663C14.5 4.93996 14.2733 5.16663 14 5.16663Z" fill="white"/>
+                <path d="M12 8.5H4C3.72667 8.5 3.5 8.27333 3.5 8C3.5 7.72667 3.72667 7.5 4 7.5H12C12.2733 7.5 12.5 7.72667 12.5 8C12.5 8.27333 12.2733 8.5 12 8.5Z" fill="white"/>
+                <path d="M9.33317 11.8334H6.6665C6.39317 11.8334 6.1665 11.6067 6.1665 11.3334C6.1665 11.06 6.39317 10.8334 6.6665 10.8334H9.33317C9.6065 10.8334 9.83317 11.06 9.83317 11.3334C9.83317 11.6067 9.6065 11.8334 9.33317 11.8334Z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0 g-4 mt-lg-5">
+          <div class="col-lg-3 position-relative z-20">
             <div class="position-sticky -top-51">
-              <h3 class="font-bold text-white fs-20">فیلترها</h3>
-              <form class="rounded-12 border border-white p-3 bg-white-3 bg-blur5 mt-5">
+              <h3 class="font-bold text-white fs-20 d-none d-lg-block">فیلترها</h3>
+              <form id="sidebar" class="rounded-12 border border-white p-3 bg-white-3 bg-blur5 mt-5 z-99 position-relative">
                <div class="border-b-gray py-16">
                 <div class="text-white cursor accordionBtn2 d-flex align-items-center justify-content-between gap-2 fs-14">
                   <p class="mb-0">نوع لباس</p>
@@ -400,15 +429,15 @@
                   </div>
                 </div>
                </div>
-               <div class="d-flex align-items-center gap-3 mt-5 pt-5">
-                 <input type="reset" value="حذف فیلترها" class="w-50 h-48 border-gray2 text-gray2 rounded-8 bg-transparent">
-                 <input type="submit" value="اعمال کنید" class="w-50 h-48 bg-main6 text-gray5 rounded-8 border-0 border-main3">
+               <div class="d-flex align-items-center gap-3 mt-5 pt-5 submitBtn">
+                 <input type="reset" value="حذف فیلترها" class="w-50 h-48 flex-grow-1 border-gray2 text-gray2 rounded-8 bg-transparent">
+                 <input type="submit" value="اعمال کنید" class="w-50 h-48 flex-grow-1 bg-main6 text-gray5 rounded-8 border-0 border-main3">
                </div>
               </form>
             </div>
           </div>
           <div class="col-lg-9">
-            <form class="row mx-0 g-3">
+            <form class="row mx-0 g-3 d-none d-lg-flex">
               <div class="col-md-8">
                 <div class="d-flex align-items-center gap-2 h-48 rounded-8 border-gray2 px-3 bg-white-6 bg-blur4">
                   <button class="border-0 bg-transparent flex-shrink-0">
@@ -604,7 +633,7 @@
                 </div>
               </div>
             </div>
-            <div id="pagination" class="d-flex align-items-center justify-content-center gap-2 fs-14 fs-sm-12 mt-5 pt-5">
+            <div id="pagination" class="d-lg-flex d-none align-items-center justify-content-center gap-2 fs-14 fs-sm-12 mt-5 pt-5">
               <a class="w-40 h-40 w-xs-32 h-xs-32 rounded-4 d-flex align-items-center justify-content-center border border-white">
                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M6.43974 14.6057C6.31307 14.6057 6.18641 14.559 6.08641 14.459C5.89307 14.2657 5.89307 13.9457 6.08641 13.7524L10.4331 9.4057C10.7531 9.0857 10.7531 8.5657 10.4331 8.2457L6.08641 3.89903C5.89307 3.7057 5.89307 3.3857 6.08641 3.19236C6.27974 2.99903 6.59974 2.99903 6.79307 3.19236L11.1397 7.53903C11.4797 7.87903 11.6731 8.33903 11.6731 8.8257C11.6731 9.31236 11.4864 9.77236 11.1397 10.1124L6.79307 14.459C6.69307 14.5524 6.56641 14.6057 6.43974 14.6057Z" fill="white"></path>
@@ -642,7 +671,7 @@
   <footer class="pt-sm-5 pt-4 position-relative">
     <!-- bg -->
     <img alt="bg" src="assets/img/Group 47225.png"
-      class="position-absolute end-0 start-0 bottom-0 w-100 d-none d-lg-block">
+      class="position-absolute -z-1 end-0 start-0 bottom-0 w-100 d-none d-lg-block">
     <img alt="bg" src="assets/img/Group 1261152916.png"
       class="position-absolute end-0 start-0 top-0 bottom-0 w-100 h-100 d-lg-none">
     <img alt="bg" src="assets/img/Image.png"

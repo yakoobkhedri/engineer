@@ -264,6 +264,12 @@ a {
     border-radius: 18px;
 }
 /* z index */
+.-z-2 {
+    z-index: -2;
+}
+.-z-1 {
+    z-index: -1;
+}
 .z-0 {
     z-index: 0;
 }
@@ -1064,7 +1070,12 @@ input[type="number"] {
     background-color: #4B1073;
     border: 0 !important;
 }
+
 /* hover */
+.filterBtn:hover{
+    background-color: #cb49b6!important;
+}
+
 .hoverMain:hover {
     color: #2596a9 !important;
 }
@@ -1207,6 +1218,24 @@ select:focus-visible {
 }
 
 @media only screen and (max-width:992px) {
+    #sidebar{
+        position: fixed !important;
+        background-color: #121222;
+        inset: 0;
+        width:100%;
+        height:100%;
+        margin-top:0 !important;
+        border-radius: 0 !important;
+        border: 1px solid transparent !important;
+        z-index:99;
+    }
+    .submitBtn{
+        position: fixed !important;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin:15px;
+    }
     .top-lg-51{
         top: 51px;
     }
@@ -1221,7 +1250,9 @@ select:focus-visible {
     .fs-md-24 {
         font-size: 24px;
     }
-
+    .fs-md-16 {
+        font-size: 16px;
+    }
     .fs-md-13 {
         font-size: 13px;
     }
