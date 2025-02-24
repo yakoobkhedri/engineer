@@ -14,18 +14,6 @@ document.addEventListener('mousemove', (event) => {
     openDropdown.classList.remove('active')
   }
 })
-// filter
-
-let openFilter = document.getElementById('openFilter');
-let sidebar = document.getElementById('sidebar');
-let closeFilter = document.getElementById('closeFilter');
-
-openFilter.addEventListener('click', function () {
-  sidebar.classList.add('active');
-});
-closeFilter.addEventListener('click', function () {
-  sidebar.classList.remove('active');
-});
 
 // select color
 
@@ -68,7 +56,11 @@ var blog = new Swiper(".blog", {
     },
   },
 });
-
+var blog2 = new Swiper(".blog2", {
+  slidesPerView: 2.7,
+  spaceBetween: 5,
+  autoplay: true,
+});
 var mySwiper = new Swiper(".mySwiper", {
   loop: true,
   spaceBetween: 10,

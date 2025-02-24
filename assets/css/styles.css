@@ -163,6 +163,7 @@ header ul li>div,
     transition: all .4s;
     opacity: 0;
     visibility: hidden;
+    z-index: 999;
 }
 
 #dropdown.active {
@@ -215,6 +216,9 @@ a {
 
 .rounded-12 {
     border-radius: 12px !important;
+}
+.rounded-14 {
+    border-radius: 14px !important;
 }
 .rounded-15 {
     border-radius: 15px !important;
@@ -289,11 +293,12 @@ a {
 .z-20 {
     z-index: 20;
 }
-
+.z-30 {
+    z-index: 30;
+}
 .z-99 {
     z-index: 99;
 }
-
 /* color */
 
 .text-main {
@@ -352,6 +357,9 @@ a {
 }
 .-top-22 {
     top: -22px;
+}
+.top-26 {
+    top: 26%;
 }
 .-top-51 {
     top: -51px;
@@ -657,6 +665,57 @@ a {
     animation: spin .4s linear infinite;
     animation-duration: 20s;
   }
+  /* range input */
+  
+  .range-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+}
+.range-container input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none; /* حذف استایل پیش‌فرض مرورگر */
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+/* استایل ترک (track) */
+.range-container input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #FF6CC8; /* رنگ بنفش */
+    border-radius: 5px;
+}
+.range-container input[type="range"]::-moz-range-track {
+    height: 4px;
+    background: #FF6CC8; /* رنگ بنفش */
+    border-radius: 5px;
+}
+/* استایل دایره‌ی کشویی (thumb) */
+.range-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* حذف استایل پیش‌فرض مرورگر */
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #121222; /* رنگ قرمز */
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-top: -6px; /* تنظیم موقعیت عمودی */
+}
+.range-container input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: #121222; /* رنگ قرمز */
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.range-container span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #bf86e4; /* رنگ بنفش */
+}
 /* border */
 .border-main {
     border: 1px solid #008BF9;
@@ -785,6 +844,9 @@ a {
 }
 .w-65 {
     width: 65px;
+}
+.w-76 {
+    width: 76px;
 }
 .w-79 {
     width: 79%;
@@ -918,6 +980,9 @@ a {
 .h-70{
     height: 70px;
 }
+.h-76{
+    height: 76px;
+}
 .h-84 {
     height: 84px;
 }
@@ -1022,7 +1087,17 @@ a {
 input[type="number"] {
     -moz-appearance: textfield;
 }
-
+/* zoom */
+#product-zoom-gallery a.active img{
+    opacity: 100%;
+}
+#product-zoom-gallery img{
+    opacity: 59.5%;
+    transition: all .4s;
+}
+.zoomWindow{
+    border-radius: 14px;
+}
 /* checkbox */
 .form-check-input:checked {
     background-color: #FF6CC8;
@@ -1469,6 +1544,9 @@ select:focus-visible {
     }
     .-top-xs-46{
         top: -46px;
+    }
+    .h-sm-auto{
+        height: auto;
     }
     .w-xs-25 {
         width: 25px;

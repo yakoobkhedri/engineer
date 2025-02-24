@@ -171,7 +171,7 @@
         </div>
       </div>
       <!-- dropdown -->
-      <div id="dropdown" class="position-absolute d-none d-xl-block mx-auto end-0 start-0 w-100 z-10 DropdownArea">
+      <div id="dropdown" class="position-absolute d-none d-xl-block mx-auto end-0 start-0 w-100 z-30 DropdownArea">
         <div class="container pt-5">
           <div class="rounded-20 bg-main4 text-end p-4 row mx-0 position-relative">
             <div class="col-4 px-0">
@@ -431,7 +431,16 @@
                 </div>
                 <div class="accordionContent2">
                   <div class="pt-3 pb-1 px-2">
-                   
+                    <div class="range-container">
+                      <label for="minPrice">حداقل قیمت:</label>
+                      <input type="range" id="minPrice" name="minPrice" min="0" max="1000" value="0">
+                      <span id="minPriceValue">0</span>
+                  </div>
+                  <div class="range-container mt-3">
+                      <label for="maxPrice">حداکثر قیمت:</label>
+                      <input type="range" id="maxPrice" name="maxPrice" min="0" max="1000" value="1000">
+                      <span id="maxPriceValue">1000</span>
+                  </div>
                   </div>
                 </div>
                </div>
@@ -904,6 +913,7 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/filter.js"></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.elevateZoom.min.js"></script>
   <script>
