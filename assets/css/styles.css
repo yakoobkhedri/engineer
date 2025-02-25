@@ -52,8 +52,8 @@ header ul li {
     transition: all .4s;
 }
 
-header ul li:hover a,
-header ul li.active a,
+header ul li:hover > a,
+header ul li.active > a,
 header ul li:hover>div,
 header ul li.active>div,
 #offcanvasRight ul li a:hover,
@@ -69,8 +69,8 @@ header ul li>div,
     transition: all .4s;
 }
 
-header ul li:hover div svg path,
-header ul li.active div svg path {
+header ul li:hover svg#arrow path,
+header ul li.active svg#arrow path {
     stroke: #cb49b6 ;
 }
 header ul li:nth-child(2)>svg {
@@ -88,10 +88,10 @@ header ul li a,
 header ul li>div,
 #mobileNav li a {
     position: relative;
-    text-align: center;
+    /* text-align: center; */
 }
 #dropdown > div > div{
-    background-color: #121222;
+    /* background-color: #121222; */
 }
 #banner {
     background-image: url('../img/futurism-perspective-digital-nomads-lifestyle\ 1.png');
@@ -155,23 +155,25 @@ header ul li>div,
 }
 /* dropdown */
 #dropdown a:hover {
-    color: #cb49b6 ;
+    /* color: #cb49b6 ; */
 }
 
 #dropdown {
-    margin-top: 115px !important;
     transition: all .4s;
     opacity: 0;
     visibility: hidden;
     z-index: 999;
+    top: -2px;
 }
 
 #dropdown.active {
-    margin-top: -36px !important;
     visibility: visible;
     opacity: 100%;
+    top: -14px;
 }
-
+#dropdown  svg path{
+    fill: white;
+}
 /* footer */
 footer{
     margin-top: 86px;
@@ -502,6 +504,9 @@ a {
 .bg-main10{
     background: linear-gradient(90deg, rgba(206, 108, 255, 0.74) 0%, rgba(39, 2, 64, 0.74) 100%);
 }
+.bg-main11{
+    background-color: #4C4C7954;
+}
 .bg-blue{
     background-color: #150043;
 }
@@ -536,6 +541,10 @@ a {
 }
 .bg-blur5{
     backdrop-filter: blur(30px)
+}
+.bg-blur6{
+    backdrop-filter: blur(10.199999809265137px) !important;
+    background-color: #4C4C7954 !important;
 }
 /* font size */
 .fs-10 {
@@ -845,6 +854,9 @@ a {
 .w-65 {
     width: 65px;
 }
+.w-74 {
+    width: 74px;
+}
 .w-76 {
     width: 76px;
 }
@@ -899,6 +911,9 @@ a {
 .w-230 {
     width: 230px;
 }
+.w-242{
+    width: 242px;
+}
 .w-248{
     width: 248px;
 }
@@ -918,7 +933,9 @@ a {
 .w-467 {
     width: 467px;
 }
-
+.overflow-y-auto{
+    overflow-y: auto;
+}
 /* height */
 .h-9 {
     height: 9px;
@@ -980,6 +997,9 @@ a {
 .h-70{
     height: 70px;
 }
+.h-74{
+    height: 74px;
+}
 .h-76{
     height: 76px;
 }
@@ -995,6 +1015,9 @@ a {
 }
 .h-96 {
     height: 96px;
+}
+.h-100vh{
+    height: 100vh;
 }
 .h-101 {
     height: 101px;
@@ -1040,6 +1063,9 @@ a {
 }
 .h-440 {
     height: 440px;
+}
+.h-493 {
+    height: 493px;
 }
 .h-580 {
     height: 580px;
@@ -1121,7 +1147,7 @@ input[type="number"] {
    color: #FF6CC8;
   }
   .accordionBtn2.active svg path{
-     fill: #FF6CC8;
+     fill: #FF6CC8 !important;
   }
 .accordionContent,.accordionContent2 {
     max-height: 0;
@@ -1147,6 +1173,9 @@ input[type="number"] {
 }
 
 /* hover */
+.mainHover:hover{
+    color: #cb49b6 !important;
+}
 .filterBtn:hover{
     background-color: #cb49b6!important;
 }
@@ -1265,6 +1294,12 @@ select:focus-visible {
     color: white;
     font-size: 18px;
 }
+.mySwiper3 .swiper-slide-visible{
+    opacity: 30%;
+}
+.mySwiper3 .swiper-slide-visible.swiper-slide-thumb-active{
+    opacity: 100%;
+}
 @media only screen and (max-width:1400px) {
     .-right-xl-35{
         right: -35px;
@@ -1352,6 +1387,9 @@ select:focus-visible {
     }
     .-mt-md-85{
         margin-top: -85px;
+    }
+    .h-lg-auto{
+        height: auto;
     }
     .right-md-0{
         right: 0;
@@ -1587,6 +1625,9 @@ select:focus-visible {
     .w-xs-65 {
         width: 65px;
     }
+    .w-xs-50 {
+        width: 50px;
+    }
     .w-xs-40 {
         width: 40px;
     }
@@ -1635,6 +1676,9 @@ select:focus-visible {
     }
     .h-xs-139{
         height: 139px;
+    }
+    .h-xs-50{
+        height: 50px;
     }
     .h-xs-40{
         height: 40px;

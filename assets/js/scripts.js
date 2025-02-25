@@ -75,6 +75,20 @@ var mySwiper2 = new Swiper(".mySwiper2", {
     swiper: mySwiper,
   },
 });
+var mySwiper3 = new Swiper(".mySwiper3", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var mySwiper4 = new Swiper(".mySwiper4", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: mySwiper3,
+  },
+});
 var comments = new Swiper(".comments", {
   slidesPerView: 1,
   spaceBetween: 60,
