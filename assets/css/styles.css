@@ -477,6 +477,9 @@ a {
 .modal-backdrop.show {
     opacity: 0.7;
   }
+  #searchModal .modal-content {
+     border: none;
+  }
 /* background */
 .bg-main{
     background: linear-gradient(103.84deg, #DF1CFF -25.59%, #4B1073 138%);
