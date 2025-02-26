@@ -12,6 +12,25 @@
 
 <body class="position-relative">
 
+  <!-- search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-transparent">
+      <form class="modal-body">
+        <div class="d-flex align-items-center gap-2 h-48 rounded-8 border-gray2 px-3 bg-white-6 bg-blur4">
+          <button class="border-0 bg-transparent flex-shrink-0">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.66634 14.5C3.89967 14.5 0.833008 11.4334 0.833008 7.66671C0.833008 3.90004 3.89967 0.833374 7.66634 0.833374C11.433 0.833374 14.4997 3.90004 14.4997 7.66671C14.4997 11.4334 11.433 14.5 7.66634 14.5ZM7.66634 1.83337C4.44634 1.83337 1.83301 4.45337 1.83301 7.66671C1.83301 10.88 4.44634 13.5 7.66634 13.5C10.8863 13.5 13.4997 10.88 13.4997 7.66671C13.4997 4.45337 10.8863 1.83337 7.66634 1.83337Z" fill="white"></path>
+              <path d="M14.6666 15.1666C14.54 15.1666 14.4133 15.12 14.3133 15.02L12.98 13.6866C12.7866 13.4933 12.7866 13.1733 12.98 12.98C13.1733 12.7866 13.4933 12.7866 13.6866 12.98L15.02 14.3133C15.2133 14.5066 15.2133 14.8266 15.02 15.02C14.92 15.12 14.7933 15.1666 14.6666 15.1666Z" fill="white"></path>
+            </svg>
+          </button>
+          <input placeholder="جستجو کنید" class="flex-grow-1 border-0 outline-none w-100 h-100 fs-12 text-white bg-transparent">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
   <!-- shape -->
   <img alt="shape" src="assets/img/background (3).png"
     class="position-absolute top-0 w-100 start-0 end-0 d-none d-md-block">
@@ -363,7 +382,7 @@
           </ul>
         </div>
         <div class="d-flex align-items-center gap-4">
-          <div class="cursor">
+          <div data-bs-toggle="modal" data-bs-target="#searchModal" class="cursor">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11.0293 19.7024C5.96631 19.7024 1.84424 15.5803 1.84424 10.5173C1.84424 5.45435 5.96631 1.33228 11.0293 1.33228C16.0923 1.33228 20.2143 5.45435 20.2143 10.5173C20.2143 15.5803 16.0923 19.7024 11.0293 19.7024ZM11.0293 2.67643C6.70112 2.67643 3.18839 6.19811 3.18839 10.5173C3.18839 14.8365 6.70112 18.3582 11.0293 18.3582C15.3575 18.3582 18.8702 14.8365 18.8702 10.5173C18.8702 6.19811 15.3575 2.67643 11.0293 2.67643Z"

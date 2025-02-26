@@ -44,7 +44,9 @@ body {
 #mobileNav>li:hover a>svg path {
     stroke: #cb49b6 ;
 }
-
+header{
+    z-index: 10;
+}
 header ul li {
     position: relative;
     text-align: center;
@@ -472,7 +474,9 @@ a {
 .cursor {
     cursor: pointer;
 }
-
+.modal-backdrop.show {
+    opacity: 0.9;
+  }
 /* background */
 .bg-main{
     background: linear-gradient(103.84deg, #DF1CFF -25.59%, #4B1073 138%);
